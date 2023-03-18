@@ -2,7 +2,7 @@
 
 Inventory by game type Grounded for samp
 
-![Crosshair](https://i.imgur.com/HpctwEu.png)
+![Crosshair](https://raw.githubusercontent.com/Bren828/inventory-SAMP/main/preview.png)
 
 ## Installation
 
