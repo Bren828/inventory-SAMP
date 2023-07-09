@@ -24,7 +24,7 @@ enum PLAYER_INV_TD_EN
     PlayerText:tiIN_Hands_Slot_Icon2[2],
     PlayerText:tiIN_Hands_Slot_Quantity[2],
 
-    //багажник
+    //ГЎГ ГЈГ Г¦Г­ГЁГЄ
     PlayerText:tiTrunk_TopStrip[2],
     PlayerText:tiTrunk_Slot_Fon[30],
     PlayerText:tiTrunk_Slot_Icon[30],
@@ -36,8 +36,8 @@ enum PLAYER_INV_TD_EN
     PlayerText:tiPageText[4],
     PlayerText:tiPageStripe
 };
-new PlayerInvTD[MAX_PLAYERS][PLAYER_INV_TD_EN];
-new NULL_PlayerInvTD[PLAYER_INV_TD_EN];
+new PlayerText:PlayerInvTD[MAX_PLAYERS][PLAYER_INV_TD_EN];
+new PlayerText:NULL_PlayerInvTD[PLAYER_INV_TD_EN];
 
 
 
