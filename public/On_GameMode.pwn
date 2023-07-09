@@ -1,6 +1,6 @@
 public OnGameModeInit()
 {
-    for(new PLAYER_INV_TD_EN:x; x < PLAYER_INV_TD_EN; x ++) NULL_PlayerInvTD[x] = INVALID_TEXT_DRAW;
+    for(new PLAYER_INV_TD_EN:x; x < PLAYER_INV_TD_EN; x ++) NULL_PlayerInvTD[x] = PlayerText:INVALID_TEXT_DRAW;
 
     #include "../scripts/new_inventory/inventory/InventoryLoadTDGlobal.pwn"
 
