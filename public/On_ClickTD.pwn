@@ -2,7 +2,7 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 {
     if(PlayerInv[playerid][iShow] == 1)
     {
-        if(_:clickedid == INVALID_TEXT_DRAW)
+        if(clickedid == Text:INVALID_TEXT_DRAW)
         {
             HideInventory(playerid);
             return 1;
