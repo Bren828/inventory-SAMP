@@ -1,6 +1,9 @@
 # inventory-SAMP
 
-Inventory by game type Grounded for samp
+Inventory by game type Grounded for samp\
+
+**TextDraw only**
+
 
 ![Crosshair](https://raw.githubusercontent.com/Bren828/inventory-SAMP/main/preview.png)
 
