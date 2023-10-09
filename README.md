@@ -7,6 +7,9 @@ Inventory by game type Grounded for samp
 
 ![Crosshair](https://raw.githubusercontent.com/Bren828/inventory-SAMP/main/preview.png)
 
+## Dependencies
+* [progress2](https://github.com/Southclaws/progress2)
+
 ## Installation
 
 Include in your code:
