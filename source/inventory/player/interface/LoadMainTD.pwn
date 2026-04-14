@@ -1,15 +1,6 @@
     
     for(new x; x < 2; x++) {
 
-        InventoryColors[x][icColor_Main_Background]    = RGB(16, 16, 16, 245); //цвет главного заднего фона 0x101010AA
-        InventoryColors[x][icColor_Main_Foreground]    = 0x202020FF; //цвет фона наложения
-        InventoryColors[x][icColor_Text]               = 0xFFFFFFFF; //цвет текста
-        InventoryColors[x][icColor_Slot_Background]    = 0x000000FF; //цвет заднего фона слотов
-        InventoryColors[x][icColor_Slot_Foreground]    = 0x303030FF; //цвет переднего фона слотов
-        InventoryColors[x][icColor_Slot_Selected]      = 0x48D1CCFF; //цвет заднего фона выбранного слота
-        InventoryColors[x][icColor_Cursor]             = 0xFFFFFF88; //цвет курсора
-        InventoryColors[x][icColor_SmallStriped]       = 0x101010FF; //цвет маленьких разделительных полосок
-
         MainTDInv[x][itdm_MainBackground] = TextDrawCreate(-5.00, -5.00, "_");//основной фон
         TextDrawBackgroundColor(MainTDInv[x][itdm_MainBackground], InventoryColors[x][icColor_Main_Background]);
         TextDrawFont(MainTDInv[x][itdm_MainBackground], 5);

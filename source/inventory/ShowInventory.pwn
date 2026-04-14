@@ -14,13 +14,3 @@ stock ShowInventory(playerid) {
     return 1;
 }
 
-/*
-CMD:inv(playerid) {
-    
-    PlayerInv[playerid][i_Language] = 0;
-    PlayerInv[playerid][i_Theme] = 0;
-
-    ShowInventory(playerid);
-    return 1;
-}
-*/
