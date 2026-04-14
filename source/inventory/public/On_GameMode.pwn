@@ -1,11 +1,11 @@
 
 public OnGameModeInit() {
 
-    for(new PLAYER_INV_TD_EN:x; x < PLAYER_INV_TD_EN; x ++) {
+    for(new E_PLAYER_INV_TD:x; x < E_PLAYER_INV_TD; x ++) {
         NULL_PlayerInvTD[x] = PlayerText:INVALID_TEXT_DRAW;
     }
 
-    #include "../source/inventory/function/InventoryLoadTDGlobal.pwn"
+    #include "../source/inventory/player/interface/LoadMainTD.pwn"
 
     #if defined OnGameModeInit_Inv
         return OnGameModeInit_Inv();

@@ -16,14 +16,14 @@ Inventory by game type Grounded for samp
 
 Include in your code:
 ```pawn
-#include "../source/inventory/0_main.pwn"
+#include "../source/inventory/_main.pwn"
 ```
 
 ## Example
 ```pawn
 CMD:inv(playerid) {
-    PlayerInv[playerid][iLanguage] = 0;
-    PlayerInv[playerid][iTheme] = 0;
+    PlayerInv[playerid][i_Language] = 0;
+    PlayerInv[playerid][i_Theme] = 0;
 
     ShowInventory(playerid);
     return 1;

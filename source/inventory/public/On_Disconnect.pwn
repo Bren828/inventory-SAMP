@@ -2,7 +2,7 @@
 
 public OnPlayerDisconnect(playerid, reason) {
 
-    if(PlayerInv[playerid][iShow] == 1) {
+    if(PlayerInv[playerid][i_Show]) {
         HideInventory(playerid);
     }
 

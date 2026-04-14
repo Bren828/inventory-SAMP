@@ -1,28 +1,27 @@
 
 stock HideInventory(playerid) {
 
-    if(PlayerInv[playerid][iShow] == 0) {
+    if(!PlayerInv[playerid][i_Show]) {
         return 0;
     }
     
-    PlayerInv[playerid][iShow] = 0;
+    PlayerInv[playerid][i_Show] = false;
 
     CancelSelectTextDraw(playerid);
 
-    #include "../source/inventory/function/InventoryUnLoadTD.pwn"
+    #include "../source/inventory/player/interface/UnLoadTD.pwn"
     
-    if(PlayerInv[playerid][iTrunkShow] != 0) {
-        #include "../source/inventory/trunk/InventoryTrunkUnLoadTD.pwn" 
+    if(PlayerInv[playerid][i_TrunkShow]) {
+        #include "../source/inventory/trunk/interface/UnLoadTrunkTD.pwn" 
     }
 
-    TextDrawHideForPlayer(playerid, GlobalInventory[PlayerInv[playerid][iTheme]][giMain_Fon]);
-    PlayerTextDrawDestroyEx(playerid, PlayerInvTD[playerid][tiPageStripe]);
-    for(new x; x < 1; x++) {
-        PlayerTextDrawDestroyEx(playerid, PlayerInvTD[playerid][tiPageText][x]);
-    }
+    TextDrawHideForPlayer(playerid, MainTDInv[PlayerInv[playerid][i_Theme]][itdm_MainBackground]);
+    PlayerTextDrawDestroyEx(playerid, PlayerInvTD[playerid][itd_PageStripe]);
+    PlayerTextDrawDestroyEx(playerid, PlayerInvTD[playerid][itd_PagesDescription]);
 
-    new page = PlayerInv[playerid][iList];
+    new page = PlayerInv[playerid][i_Page];
+
     PlayerInv[playerid] = NULL_PlayerInv;
-    PlayerInv[playerid][iList] = page;
+    PlayerInv[playerid][i_Page] = page;
     return 1;
 }
