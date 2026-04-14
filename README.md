@@ -2,8 +2,6 @@
 
 Inventory by game type Grounded for samp
 
-[**Second version**](https://github.com/Bren828/inventory-rpg-SAMP)
-
 **TextDraw only**
 
 
